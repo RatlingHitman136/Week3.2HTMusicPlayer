@@ -58,31 +58,31 @@
      <Compile Include="Assets\Scipts\AudioController.cs" />
      <Compile Include="Assets\Scipts\Track.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/TactickShooter/MusicPlayer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/Player/MusicPlayer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.0b10/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

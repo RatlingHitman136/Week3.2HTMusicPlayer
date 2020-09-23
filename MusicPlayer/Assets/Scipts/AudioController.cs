@@ -12,13 +12,13 @@ public class AudioController : MonoBehaviour
     public Text Play_Pause;
     public Text SongNameTextSpace;
     public Animator NameAnimator;
-    int currentSon;
+    int currentSong;
 
     void Start()
     {
-        currentSon = 0;
-        this.GetComponent<AudioSource>().clip = Tracks[currentSon].Clip;
-        SongPreview.sprite = Tracks[currentSon].SongPreview;
+        currentSong = 0;
+        this.GetComponent<AudioSource>().clip = Tracks[currentSong].Clip;
+        SongPreview.sprite = Tracks[currentSong].SongPreview;
         NameAnimator.SetBool("Up", true);   
         this.GetComponent<AudioSource>().Play();
     }
@@ -27,29 +27,25 @@ public class AudioController : MonoBehaviour
     {
         this.GetComponent<AudioSource>().volume = Volume.value;
         if(NameAnimator.GetBool("Up"))
-            SongNameTextSpace.text = Tracks[currentSon].Text;
+            SongNameTextSpace.text = Tracks[currentSong].Text;
     }
 
     public void NextSong()
     {
-        currentSon = (currentSon + 1) % Tracks.Count();
-        this.GetComponent<AudioSource>().clip = Tracks[currentSon].Clip;
-        SongPreview.sprite = Tracks[currentSon].SongPreview;
-        if(NameAnimator.GetBool("Up"))
-        {
-            NameAnimator.SetBool("Up", false);
-            Invoke("UpText", 0.5f);
-        }
-        else
-            NameAnimator.SetBool("Up", true);
-        this.GetComponent<AudioSource>().Play();
+        currentSong = (currentSong + 1) % Tracks.Count();
+        SetSongByNumber();
     }
 
     public void PrevSong()
     {
-        currentSon = currentSon == 0 ? Tracks.Count() - 1 : currentSon - 1;
-        this.GetComponent<AudioSource>().clip = Tracks[currentSon].Clip;
-        SongPreview.sprite = Tracks[currentSon].SongPreview;
+        currentSong = currentSong == 0 ? Tracks.Count() - 1 : currentSong - 1;
+        SetSongByNumber();
+    }
+
+    void SetSongByNumber()
+    {
+        this.GetComponent<AudioSource>().clip = Tracks[currentSong].Clip;
+        SongPreview.sprite = Tracks[currentSong].SongPreview;
         if (NameAnimator.GetBool("Up"))
         {
             NameAnimator.SetBool("Up", false);
@@ -58,13 +54,13 @@ public class AudioController : MonoBehaviour
         else
             NameAnimator.SetBool("Up", true);
         this.GetComponent<AudioSource>().Play();
-
     }
 
     void UpText()
     {
         NameAnimator.SetBool("Up", true);
     }
+
     public void PauseSong()
     {
         if (Play_Pause.text == "Pause")
